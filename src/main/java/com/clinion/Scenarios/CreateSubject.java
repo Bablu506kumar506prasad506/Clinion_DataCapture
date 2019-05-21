@@ -30,7 +30,7 @@ public class CreateSubject {
 
 	public void CreateSubject_Methd() throws Exception {
 		
-		Globalmethods.Datamanager_Login();
+		Globalmethods.CoInvestigator_Login();
 
 		for (int k = 0; k <= 100; k++) {
 			

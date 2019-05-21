@@ -39,6 +39,17 @@ public class ClinionDataVerification {
 		System.out.println("!!!------Om Shri Ganeshaya Namah-------Welcome to My Code---------!!!");
 		driver.manage().window().maximize();
 		driver.get("http://haem-pro.clinion.com/Stage/Default.aspx");
+		//--------test-------WindowHandles-------//
+		java.util.Set<String> handles = driver.getWindowHandles();
+	    System.out.println(handles);
+
+	    for (String handle1 : handles) {
+
+	           System.out.println(handle1);
+
+	           driver.switchTo().window(handle1);
+
+	    }
 
 		/*
 		 * String username = sh1.getCell(4, 1).getContents(); String password =

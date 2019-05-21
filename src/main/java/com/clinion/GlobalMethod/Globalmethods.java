@@ -100,9 +100,9 @@ public class Globalmethods {
 			String UserName_Data = r1.getCell(1, 3).getContents();
 			String Password_Data = r1.getCell(2, 3).getContents();
 
-			driver.findElement(By.id("txtUserName")).sendKeys("ritika");
+			driver.findElement(By.id("txtUserName")).sendKeys("drruby");
 			WebElement sas = driver.findElement(By.id("txtPassword"));
-			sas.sendKeys("Test@1234");
+			sas.sendKeys("Timer@123");
 			driver.findElement(By.xpath("//input[@type='submit']")).click();
 
 		}

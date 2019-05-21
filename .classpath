@@ -35,6 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="E:/Automation/selenium-2.53.0/jxl.jar"/>
+	<classpathentry kind="lib" path="D:/selenium-2.53.0/jxl.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
