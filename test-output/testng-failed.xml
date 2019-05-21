@@ -5,8 +5,8 @@
     <classes>
       <class name="com.clinion.execution.DatacaptureExecution">
         <methods>
-          <include name="createsubjectM"/>
           <include name="beforeMethod"/>
+          <include name="exctractData"/>
         </methods>
       </class> <!-- com.clinion.execution.DatacaptureExecution -->
     </classes>

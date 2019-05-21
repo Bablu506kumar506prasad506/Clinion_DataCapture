@@ -32,11 +32,11 @@ public class DatacaptureExecution {
 		Globalmethods.LaunchBrowser(firefoxBrowser, URL);
 	}
 
-	@Test
+	/*@Test
 	public void createsubjectM() throws Exception{
 		CreateSubject CS = new CreateSubject();
 		CS.CreateSubject_Methd();
-	}
+	}*/
 	
 	@Test(priority = 0)
 	public static void exctractData() throws Exception {

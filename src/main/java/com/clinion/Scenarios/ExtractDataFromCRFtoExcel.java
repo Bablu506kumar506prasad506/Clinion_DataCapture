@@ -32,20 +32,20 @@ public class ExtractDataFromCRFtoExcel {
 	Actions action = new Actions(Globalmethods.driver);
 
 	public void ExtractSubject_Methd() throws Exception {
-//		Globalmethods.Datamanager_Login_Client1();
-		Globalmethods.FP_Login_Client1();
+		Globalmethods.Datamanager_Login_Client1();
+//		Globalmethods.FP_Login_Client1();
 		
 
-//		GWait.Wait_GetElementByLinkText("Data Capture").click();
-		GWait.Wait_GetElementByXpath("//tr/td[7]/table/tbody/tr/td[1]/a", 120).click();
+		GWait.Wait_GetElementByLinkText("Data Capture").click();
+//		GWait.Wait_GetElementByXpath("//tr/td[7]/table/tbody/tr/td[1]/a", 120).click();
 		Thread.sleep(1000);
-		GWait.Wait_GetElementByLinkText("1701001S101").click();
+		GWait.Wait_GetElementByLinkText("1701002S008").click();
 		Thread.sleep(4000);
-		GWait.Wait_GetElementById("imgdivScrrenslist1.00v",120).click();
+		GWait.Wait_GetElementById("imgdivScrrenslist5.00v",120).click();
 		Thread.sleep(5000);
 		
-		GWait.Wait_GetElementByXpath("//*[@id=\"divScrrenslist1.00v\"]/table/tbody/tr/td/a").click();
-//		GWait.Wait_GetElementByLinkText("SERUM/URINE PREGNANCY TEST").click();
+		GWait.Wait_GetElementByXpath("//*[@id=\"divScrrenslist5.00v\"]/table/tbody/tr/td/a").click();
+//		GWait.Wait_GetElementById("//*[@id='tvVisitst27']").click();
 		
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		// Create a blank sheet
@@ -182,10 +182,10 @@ public class ExtractDataFromCRFtoExcel {
 				
 				//Clicking the submit and next button
 				
-				FileOutputStream out = new FileOutputStream(new File("DataFile.xls"));
+				FileOutputStream out = new FileOutputStream(new File("TimerDataFile2.xls"));
 				workbook.write(out);
 				out.close();
-				System.out.println("DataFile.xls written successfully");
+				System.out.println("TimerDataFile2.xls written successfully");
 //				GWait.Wait_GetElementById("btnNext", 120).click();
 				
 				GWait.Wait_GetElementById("btnSaveSubmit",120).click();
