@@ -38,18 +38,18 @@ public class DatacaptureExecution {
 		CS.CreateSubject_Methd();
 	}
 	
-	/*@Test(priority = 0)
+	@Test(priority = 0)
 	public static void exctractData() throws Exception {
 		ExtractDataFromCRFtoExcel extract = new ExtractDataFromCRFtoExcel();
 		extract.ExtractSubject_Methd();
-	}*/
+	}
 
-	/*@Test(priority = 1)
+	@Test(priority = 1)
 	public static void datacapture() throws Exception {
 
 		Datacapture DC = new Datacapture();
 		DC.Datacapture_method();
-	}*/
+	}
 	
 	/*@Test(priority = 2)
 	public static void DataVerifiy() throws Exception {
